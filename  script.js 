@@ -71,3 +71,15 @@ export const PALAVRAS_RUINS = new Set([
   // restante da lista...
 ]);
 import { PALAVRAS_RUINS } from "./palavrasRuins.js";
+function mostraPalavrasChave() {
+  const texto = document.querySelector("#entrada-de-texto").value;
+
+  const campoResultado = document.querySelector("#resultado-palavrachave");
+
+  const palavrasChave = processaTexto(texto);
+
+  campoResultado.textContent = palavrasChave.join(", ");
+}
+// código antigo a ser removido
+
+console.log(ordenadas);
